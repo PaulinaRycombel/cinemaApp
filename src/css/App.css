@@ -19,6 +19,8 @@ div.row {
 .content {
   min-height: 95vh;
   padding: 0 5vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .app-title {
@@ -29,6 +31,21 @@ div.row {
 
 .program {
   font-size: 1.4rem;
+}
+
+/* button animation: */
+.ripple {
+  background-position: center;
+  transition: 1s;
+}
+.ripple:hover {
+  background: #64b5f6 radial-gradient(circle, transparent 1%, #64b5f6 1%)
+    center/11000%;
+}
+.ripple:active {
+  background-color: #64b5f6;
+  background-size: 100%;
+  transition: 0s;
 }
 
 .footer {
