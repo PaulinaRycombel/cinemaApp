@@ -1,0 +1,14 @@
+.home-page.collection-item img {
+  width: 65%;
+}
+
+.home-page.collection-item .title {
+  margin: 0.7rem 0 0.2rem 0;
+  text-align: center;
+}
+
+.collection .home-page.collection-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
