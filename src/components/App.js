@@ -18,8 +18,9 @@ class App extends React.Component {
           >
             <div className="app-title">Cinema App</div>
             <Router>
-              <Route path="/screenings/:screeningId" component={Screening} />
               <Route path="/movies/:movieId" component={MovieDetails} />
+              <Route path="/screenings/:screeningId" component={Screening} />
+
               <Route exact path="/" component={Program} />
             </Router>
           </div>

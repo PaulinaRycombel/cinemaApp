@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Movie = ({ movie }) => {
   return (
     <Link
-      to={`/movie/${movie._id}`}
+      to={`/movies/${movie._id}`}
       className="home-page collection-item blue-grey lighten-1"
     >
       <img src={movie.img_url} alt={movie.title} />

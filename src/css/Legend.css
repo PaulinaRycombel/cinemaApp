@@ -1,0 +1,24 @@
+.legend-wraper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.legend-box {
+  width: 35px;
+  height: 35px;
+  margin: 10px;
+}
+.blue-color {
+  background-color: #0d47a1;
+}
+.red {
+  background-color: red;
+}
+.gray {
+  background-color: gray;
+}
