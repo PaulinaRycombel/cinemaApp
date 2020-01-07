@@ -78,7 +78,8 @@ class Screening extends React.Component {
       .then(res => res.text())
       .then(res => JSON.parse(res))
       .then(data => {
-        console.log("data: ", data);
+        console.log(data._id);
+        this.props.history.push(`/reservations/${data._id}`);
       })
       .catch(function(res) {
         console.log(res);

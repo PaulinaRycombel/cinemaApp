@@ -5,6 +5,7 @@ import "materialize-css/dist/css/materialize.min.css";
 import { Row, Col } from "react-materialize";
 import Program from "./Program";
 import Screening from "./Screening";
+import Reservation from "./Reservation";
 import MovieDetails from "./MovieDetails";
 
 class App extends React.Component {
@@ -20,6 +21,10 @@ class App extends React.Component {
             <Router>
               <Route path="/movies/:movieId" component={MovieDetails} />
               <Route path="/screenings/:screeningId" component={Screening} />
+              <Route
+                path="/reservations/:reservationId"
+                component={Reservation}
+              />
 
               <Route exact path="/" component={Program} />
             </Router>

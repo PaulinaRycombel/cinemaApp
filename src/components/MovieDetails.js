@@ -93,7 +93,7 @@ class MovieDetails extends React.Component {
                 <b>Showtime tomorrow:</b>
               </p>
               <p>
-                {this.state.movie.showtime_today.split(", ").map(hour => (
+                {this.state.movie.showtime_tomorrow.split(", ").map(hour => (
                   <Link
                     style={{
                       display: "inline-block",
@@ -103,7 +103,7 @@ class MovieDetails extends React.Component {
                       margin: 10,
                       marginLeft: 0
                     }}
-                    to={this.genreateLink(hour, "today")}
+                    to={this.genreateLink(hour, "tomorrow")}
                   >
                     {hour}
                   </Link>
